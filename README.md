@@ -3,8 +3,7 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/nexus-scholar/laravel-tenant-sqlite.svg?style=flat-square)](https://packagist.org/packages/nexus-scholar/laravel-tenant-sqlite)
 [![Total Downloads](https://img.shields.io/packagist/dt/nexus-scholar/laravel-tenant-sqlite.svg?style=flat-square)](https://packagist.org/packages/nexus-scholar/laravel-tenant-sqlite)
 [![Tests](https://github.com/nexus-scholar/laravel-tenant-sqlite/actions/workflows/tests.yml/badge.svg)](https://github.com/nexus-scholar/laravel-tenant-sqlite/actions/workflows/tests.yml)
-[![PHP Version Require](http://img.shields.io/badge/php-8.2+-blue.svg)](https://php.net)
-[![License](https://img.shields.io/packagist/l/nexus-scholar/laravel-tenant-sqlite.svg?style=flat-square)](https://packagist.org/packages/nexus-scholar/laravel-tenant-sqlite)
+[![PHP Version Require](http://img.shields.io/badge/php-8.3+-blue.svg)](https://php.net)
 
 A robust and secure Laravel package for implementing multi-tenancy using an **isolated SQLite database file for each tenant**. 
 
