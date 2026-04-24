@@ -1,0 +1,52 @@
+{
+    "name": "nexus-scholar/laravel-tenant-sqlite",
+    "description": "Laravel package for isolated per-tenant SQLite databases",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "ext-pdo": "*",
+        "ext-pdo_sqlite": "*",
+        "illuminate/support": "^12.0|^13.0",
+        "illuminate/database": "^12.0|^13.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0",
+        "pestphp/pest": "^3.8",
+        "pestphp/pest-plugin-laravel": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "NexusScholar\\LaravelTenantSqlite\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NexusScholar\\LaravelTenantSqlite\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "pest",
+        "test:unit": "pest tests/Feature/ResolverInputTest.php",
+        "test:feature": "pest tests/Feature",
+        "test:coverage": "pest --coverage",
+        "test:coverage:clover": "pest --coverage-clover build/logs/clover.xml"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NexusScholar\\LaravelTenantSqlite\\TenantDatabaseServiceProvider"
+            ],
+            "aliases": {
+                "TenantDatabase": "NexusScholar\\LaravelTenantSqlite\\Facades\\TenantDatabase"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}

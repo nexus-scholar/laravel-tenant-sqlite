@@ -1,0 +1,6 @@
+/vendor
+/tests/temp
+/build
+.phpunit.cache
+.env
+.idea
